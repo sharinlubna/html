@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Tool, Publishing Platform, and CMS - WordPress.org</title>
+    <link rel="shortcut icon" href="images/Wordpress_Blue_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        width: 100%;
+        height: 60px;
+    }
+    .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(0, 0, 0, 0.726);
+        color: white;
+    }
+    .navbar .logo img{
+        width: 120%;
+        height: 61px;
+        border-right: 1px dotted white;
+        align-items: center;
+    }
+    .navbar .link{
+        width: 70%;
+        margin: 20px;
+    }
+    .navbar .link a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .navbar .link a:hover{
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        background-color: black;
+    }
+
+    
+    .navbar .search-block{
+        width: 300px;
+        height: 20px;
+        align-items: right;
+        text-align: right;
+        margin-top: -44px;
+    }
+    .navbar .search-block .search{
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        padding: 18px;
+        margin-right: 20px;
+
+    }
+    .navbar .search-block .get-wordpress{
+        width: 150px;
+        height: 35px;
+        background-color: blue;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+    .navbar .search-block .search:hover{
+        background-color: rgba(0, 0, 0, 0.4);;
+    }
+    .navbar .search-block .get-wordpress:hover{
+        background-color: rgb(32, 32, 121);
+
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background-color: black;
+    }
+    .section1 {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+    .section1 .col{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .col ul{
+        list-style-type: none;
+        margin: 90px 50px;
+    }
+    .col li{
+        line-height: 22px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: small;
+        
+    }
+    .col li a{
+        color: white;
+        text-decoration: none;
+    }
+    .col li:hover{
+        text-decoration: underline;
+        color: white;
+    }
+    .section2 {
+        width: 100%;
+        height: 30%;
+        background-color: blue;
+        display: flex;
+        flex-direction: row;
+    }
+    .section2 .col1{
+        width: 30%;
+        height: 100%;
+        margin: 20px;
+    }
+    .section2 .col1 img{
+        width: 11%;
+        height: 40%;
+        margin: 15px;
+    }
+    .section2 .col1 a{
+        text-decoration: none;
+    }
+    .section2 .col1 p{
+        margin: -51px 56px;
+        color: white;
+    }
+    .section2 .col2 p{
+        color: rgba(255, 255, 255, 0.39);
+        letter-spacing: 2px;
+        margin: 54px 165px;
+        font-size: 15px;
+    }
+    .section2 .col3{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* social media icons */
+    .fa {
+        padding: 11px;
+        font-size: 20px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        margin: 34px 9px;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+   </style>
+
+</head>
+<body>
+    <!-- nav bar section -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/WordPress_white.png" alt="">
+            </div>
+            <div class="link">
+                <a href="#">News</a>
+                <a href="#">Download And Extend</a>
+                <a href="#">Learn</a>
+                <a href="#">Community</a>
+                <a href="#">About</a>
+            </div>
+            <div class="search-block">
+                <button type="button" class="search">
+                    <i class="fa fa-search" style="font-size:20px;color:white"></i>
+                </button>
+                <button type="button" class="get-wordpress">Get WordPress</button>
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <!-- page content-->
+
+
+
+    <!--  footer -->
+
+    <footer>
+        <div class="section1">
+            <div class="col">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Hosting</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Swag</a></li>
+                </ul>   
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Learn</a></li>
+                </ul>   
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="#">Showcase</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Patterns</a></li>
+                </ul>   
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="#">WordCamp</a></li>
+                    <li><a href="#">WordPress.TV</a></li>
+                    <li><a href="#">BuddyPress</a></li>
+                    <li><a href="#">bbPress</a></li>
+                </ul>   
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="#">WordPress.com</a></li>
+                    <li><a href="#">Matt</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Public Code</a></li>
+                </ul>   
+            </div>
+        </div>
+        <div class="section2">
+            <div class="col1">
+                <a href="#">
+                    <img src="images/WordPress_white.png">
+                    <p>WORDPRESS.ORG</p>
+                </a>
+            </div>
+            <div class="col2">
+                <p>CODE IS POETRY</p>
+            </div>
+            <div class="col3">
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-twitter"></a>   
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

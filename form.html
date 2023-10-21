@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebooklogin</title>
+    <link rel="shortcut icon" href="images/facebook.jfif">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80%;
+            height: 800px;
+            margin: 5%;
+            position:absolute;
+            display: flex;
+            flex-direction: row;
+        }
+        .container .text{
+            width: 60%;
+            height: 200px;
+            margin-top: 3%;
+        }
+        .text img{
+            width: 40%;
+            height: 256px;
+            margin-left: 191px;
+        }
+        .text p{
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 32px;
+            width: 500px;
+            margin: -88px 215px;
+        }
+
+        .form-div{
+            margin: 3% 2%;
+            width: 30%;
+            height: 370px;
+            background-color: white;
+            align-content: center;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            
+        }
+        form{
+            /* margin: 3% 2%;
+            width: 30%;
+            height: 370px; */
+            padding: 20px;
+            line-height: 3em;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+        input[type=text]{
+            margin: 8px;
+            padding: 12px;
+            width: 90%;
+            height: 50px;
+            font-size: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            -webkit-transition: 0,5s;
+            transition: 0 5s;
+            outline: none;
+            border: 1px solid rgb(241, 227, 227);
+        }
+        input[type=text]:focus{
+            border: 1px solid #1877f2;
+        }
+        input[type=submit]{
+            font-size: 15px;
+            color: white;
+            width: 85%;
+            height: 40px;
+            background-color: #1877f2;
+            border-radius: 10px;
+            border: none;
+        }
+        button {
+            width: 60%;
+            height: 35px;
+            background-color: rgb(42, 155, 42);
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-top: 20px;
+        }
+        .form-div a{
+            margin-top: 20px;
+            color: #1877f2;
+            font-family: Helvetica, Arial, sans-serif;
+
+        }
+        .form-div hr{
+            margin-top: 20px;
+
+        }
+        
+        
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <img src="images/facebook-logo.png" alt="">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+
+        </div>
+        <div class="form-div">
+            <form action="#">
+                <input type="text" name="email" id="email" placeholder="Email address or phone number"><br>
+                <input type="text" name="password" id="password" placeholder="Password"><br>
+                <input type="submit" value="Log in"><br>
+                <a href="#">Forgotten password?</a>
+                <hr>
+                <button type="button">Create new account</button><br>
+                
+            </form>
+            <p><a href="#">Create a Page</a> for a celebrity, brand or business. </p><br>
+        </div>
+    </div>
+    
+</body>
+</html>
